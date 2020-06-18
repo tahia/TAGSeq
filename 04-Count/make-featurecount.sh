@@ -35,5 +35,5 @@ for fil in ${INDIR}*.bam; do
   IN+="${fil} "
 done
   OLOG="${LOG}featureCounts.log"
-echo "$SCRIPT -a $ANF -o $OFIL -t gene -g ID --readExtension5 0  --readExtension3 0 -s 0 -Q 0 -d 50 -T 24 --primary $IN  > $OLOG " >> $PARAM
+echo "$SCRIPT -a $ANF -o $OFIL -t gene -g ID --readExtension5 0  --readExtension3 0 -s 1 -Q 0 -d 50 -T 24 --primary $IN  > $OLOG " >> $PARAM
 
